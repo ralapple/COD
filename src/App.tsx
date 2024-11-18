@@ -15,8 +15,10 @@ function App() {
     <div className="App">
       <GeneralHeader />
       <div className='AppContent'>
-      <h1>CSCI 5561 COD Project</h1>
-      <p>Authored by: Raymond Lyon, Nate Nelson</p>
+      <h2>Camoflauged Object Detection using SINET and PSPNet</h2>
+      <p>Authored by: Raymond Lyon, Nate Nelson, Junno Yun</p>
+      <h2>Demo</h2>
+      <p>Upload or take a picture. The photo will be processed through each model and searched for hidden objects. Your photo is not saved by us.</p>
       {uploadedImage && <img src={uploadedImage} alt="Uploaded" style={{ maxWidth: '100%', marginTop: '20px' }} />}
       <input type='file' accept='.jpg, .jpeg, .png' onChange={handleImageUpload}></input>
       <button type='submit'>Process</button>
