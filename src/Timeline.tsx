@@ -19,9 +19,12 @@ const Timeline = () => {
     return (
         <div className="App">
         <GeneralHeader />
-            <div className="timelineList">
+        <div className="AppContent">
+            <h2>Timeline of Project Progress</h2>
+            <div className="citationsList">
                 <TimelineText />
             </div>
+        </div>
         </div>
     )
 }

@@ -2,7 +2,38 @@ import React, { useState } from 'react';
 import './App.css';
 import GeneralHeader from './Header';
 
-function App() {
+
+const OverviewText = () => {
+  return (
+    <div className='overviewText'>
+      <h2>Camouflaged Object Detection using SINET and PSPNet</h2>
+      <p>Authored by: Raymond Lyon, Nate Nelson, Junno Yun</p>
+      <p>
+        This project explores the detection of camouflaged objects in images using deep learning techniques. 
+        Camouflaged object detection is a challenging task as these objects are intentionally designed to blend 
+        with their surroundings, making them difficult to identify. To address this, we leverage two state-of-the-art 
+        models: SINET (Search-Informed Network) and PSPNet (Pyramid Scene Parsing Network). Both models are known for 
+        their exceptional ability to analyze complex scenes and identify hidden patterns.
+      </p>
+      <p>
+        The project involves training and testing these models on carefully curated datasets to evaluate their 
+        performance in identifying camouflaged objects. We aim to provide an intuitive demo showcasing the models' 
+        capabilities and how they can be applied in real-world scenarios, such as wildlife research, surveillance, 
+        and defense applications. The demo allows users to upload their images and see how the models process them 
+        to reveal hidden objects.
+      </p>
+      <p>
+        This work combines the strengths of cutting-edge deep learning techniques and domain-specific datasets 
+        to push the boundaries of visual recognition technology. The results are documented in our final report, 
+        which will discuss model architectures, training pipelines, and evaluation metrics, as well as lessons 
+        learned and future directions.
+      </p>
+    </div>
+  );
+};
+
+
+const Demo = () => {
   const [uploadedImage, setUploadedImage] = useState<File | null>(null);
   const [processedImage, setProcessedImage] = useState<string | null>(null);
   const [responseText, setResponseText] = useState<string | null>(null);
@@ -50,12 +81,8 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <GeneralHeader />
-      <div className="AppContent">
-        <h2>Camouflaged Object Detection using SINET and PSPNet</h2>
-        <p>Authored by: Raymond Lyon, Nate Nelson, Junno Yun</p>
-        <h2>Demo</h2>
+    <div className='demo'>
+        <h2>Try it for Yourself!</h2>
         <p>
           Upload or take a picture. The photo will be processed through each model and searched for hidden objects. Your photo is not saved by us.
         </p>
@@ -82,6 +109,20 @@ function App() {
             <p>{responseText}</p>
           </div>
         )}
+        </div>
+
+  )
+};
+
+function App() {
+
+
+  return (
+    <div className="App">
+      <GeneralHeader />
+      <div className='AppContent'>
+        <OverviewText />
+        <Demo />
       </div>
     </div>
   );
