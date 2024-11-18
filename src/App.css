@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  
+}
+
+.AppContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -35,4 +43,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.generalHeader {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background-color: burlywood;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+img {
+  height: 200px;
 }
