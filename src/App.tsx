@@ -8,6 +8,7 @@ const OverviewText = () => {
     <div className='overviewText'>
       <h2>Camouflaged Object Detection using SINET and PSPNet</h2>
       <p>Authored by: Raymond Lyon, Nate Nelson, Junno Yun</p>
+      <h3>Overview</h3>
       <p>
         This project explores the detection of camouflaged objects in images using deep learning techniques. 
         Camouflaged object detection is a challenging task as these objects are intentionally designed to blend 

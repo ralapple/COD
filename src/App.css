@@ -2,7 +2,9 @@
   font-family: 'monaco', monospace, serif;
   text-align: center;
   background-color: #e8e6e0;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: fit-content;
+  min-width: fit-content;
 }
 
 .AppContent {
@@ -73,7 +75,8 @@ a:hover {
 }
 
 .citationsList {
-  width: 50%;
+  min-width: fit-content;
+  max-width: 50%;
   font-size: 13px;
   text-wrap:pretty;
   text-align: left;
@@ -84,5 +87,6 @@ a:hover {
 }
 
 .overviewText {
-  width: 60%;
+  min-width: fit-content;
+  max-width: 70%;
 }
