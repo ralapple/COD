@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CitationsPage from './Citations';
 import Timeline from './Timeline';
+import AboutPage from './About';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,6 +18,7 @@ root.render(
       <Route path="/" element={<App />} />
       <Route path="/citations" element={<CitationsPage />} />
       <Route path="/timeline" element={<Timeline />} />
+      <Route path="/about" element={<AboutPage />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
