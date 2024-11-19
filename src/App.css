@@ -78,7 +78,7 @@ a:hover {
   min-width: fit-content;
   max-width: 50%;
   font-size: 13px;
-  text-wrap:pretty;
+  text-wrap:wrap;
   text-align: left;
   display: flex;
   flex-direction: column;
